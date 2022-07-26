@@ -80,7 +80,12 @@ body {
 }
 
 
-.btn.disabled{
+/* .btn.disabled{
     background-color: #ddd;
     cursor: not-allowed;
-}
+} */
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

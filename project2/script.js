@@ -37,12 +37,13 @@ function update(){
     const actives = document.querySelectorAll('.active')
     progress.style.width = (actives.length-1)/(circles.length-1)*100 + '%'
     console.log(currentActive)
-    if(currentActive===1){
-        prev.classList.add('disabled')
-    }else if (currentActive===circles.length){
-        next.classList.add('disabled')
-    }else{
-        prev.classList.remove('disabled')
-        next.classList.remove('disabled')
+    if(currentActive === 1) {
+        prev.disabled = true
+    } else if(currentActive === circles.length) {
+        next.disabled = true
+    } else {
+        prev.disabled = false
+        next.disabled = false
     }
+    console.log(prev.disabled,next.disabled)
 }
