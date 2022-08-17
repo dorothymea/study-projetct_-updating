@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: LXGWWenKai sans-serif;
+    src: url('./LXGWWenKai-Regular.ttf');
+}
 
 * {
     box-sizing: border-box;
@@ -14,6 +17,7 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: lightseagreen;
+    font-family: LXGWWenKai sans-serif;
 }
 
 .container {
@@ -38,6 +42,7 @@ h2 {
     line-height: 32px;
     margin: 40px auto 60px auto;
     max-width: 600px;
+    font-family: LxgwWenKai sans-serif;
 }
 
 .btn {
@@ -49,6 +54,7 @@ h2 {
     padding: 12px  20px;
     cursor: pointer;
     letter-spacing: 2px;
+    font-family: LXGWWenKai sans-serif;
 }
 
 .btn:focus{
@@ -66,4 +72,5 @@ h2 {
     left: 60%;
     top:58%;
     letter-spacing: 1px;
+    font-family: LXGWWenKai sans-serif;
 }
