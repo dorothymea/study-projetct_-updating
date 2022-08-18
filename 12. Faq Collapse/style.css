@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: lightseagreen;
+}
+
+
+
+h1 {
+    margin: 50px 0 20px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 700px;
+}
+
+.faq{
+    width: 100%;
+    border: 1px solid #9FA4A8;
+    border-radius: 5px;
+    background: #F0F0F0;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+}
+
+.faq.active{
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+}
+
+
+.faq.active h3 {
+    font-size: 20px;
+    margin-right: 40px;
+    z-index: 1;
+
+}
+
+.faq p {
+    display: none;
+}
+.faq.active p {
+    display: block;
+    margin-top: 30px;
+    margin-right: 40px;
+    z-index: 2;
+}
+.faq button{
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border: 0;
+    background-color: transparent;
+}
+
+
+.active .icon.fold, .icon.unfold{
+    display: inline;
+    width: 20px; 
+    height: 20px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.icon.fold,.active .icon.unfold{
+    display: none;
+}
+
+.icon.bubble{
+    display: none;
+}
+
+.active .icon.bubble{
+    display: block;
+    position: absolute;
+    width: 150px; 
+    height: 150px;
+    fill: currentColor;
+    overflow: hidden;
+    top: 0;
+    left: -10px;
+    opacity: 0.2;
+}
